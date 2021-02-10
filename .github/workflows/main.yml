@@ -12,7 +12,7 @@ jobs:
       - run: python3 -h
       - run: python3 -m venv -h
       - run: |
-          python3 -m venv /tmp/testing-venv
+          python3 -m venv /tmp/testing-venv --without-pip
         shell: cmd
   test-job-python-38:
     runs-on: windows-latest
@@ -24,7 +24,7 @@ jobs:
       - run: python3 -h
       - run: python3 -m venv -h
       - run: |
-          python3 -m venv /tmp/testing-venv
+          python3 -m venv /tmp/testing-venv --without-pip
         shell: cmd
   test-job-python-39:
     runs-on: windows-latest
@@ -36,5 +36,5 @@ jobs:
       - run: python3 -h
       - run: python3 -m venv -h
       - run: |
-          python3 -m venv /tmp/testing-venv
+          python3 -m venv /tmp/testing-venv --without-pip
         shell: cmd
