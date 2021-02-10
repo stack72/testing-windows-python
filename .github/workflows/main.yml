@@ -1,0 +1,14 @@
+on:
+  push:
+
+jobs:
+  test-job-python-37:
+    runs-on: windows-latest
+    steps:
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+      - run: |
+          python3 -m venv /tmp/testing-venv
+        shell: cmd
