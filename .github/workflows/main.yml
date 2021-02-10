@@ -12,3 +12,23 @@ jobs:
       - run: |
           python3 -m venv /tmp/testing-venv
         shell: cmd
+  test-job-python-38:
+    runs-on: windows-latest
+    steps:
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - run: |
+          python3 -m venv /tmp/testing-venv
+        shell: cmd
+  test-job-python-39:
+    runs-on: windows-latest
+    steps:
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - run: |
+          python3 -m venv /tmp/testing-venv
+        shell: cmd
